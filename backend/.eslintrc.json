@@ -1,0 +1,24 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "@typescript-eslint/no-non-null-assertion": 0,
+      "no-case-declarations": 0,
+      "@typescript-eslint/explicit-module-boundary-types": 0,
+      "@typescript-eslint/no-explicit-any": 0,
+      "no-async-promise-executor": 0,
+      "@typescript-eslint/ban-types": 0,
+      "@typescript-eslint/no-var-requires": 0,
+      "@typescript-eslint/no-non-null-asserted-optional-chain": 0,
+      "no-console": 0, // Means warning @typescript-eslint/no-non-null-asserted-optional-chain
+      "prettier/prettier": ["error", { "endOfLine": "auto" }] // Means error,
+    }
+  }
+  
